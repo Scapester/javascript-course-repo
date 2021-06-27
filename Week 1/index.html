@@ -7,6 +7,25 @@
     <title>Hello World!</title>
 </head>
 <body>
+    <label for="time-zone-form"><h4>Select Timezone:</h4></label>
+    <form id="time-zone-form">
+        <input type="radio" name="timezone" id="cet-time-zone" value="cet"/>
+        <label for="cet-time-zone">Central European Time</label><br>
+        <input type="radio" name="timezone" id="est-time-zone" value="est"/>
+        <label for="est-time-zone">Eastern Standard Time</label><br>
+        <input type="radio" name="timezone" id="cst-time-zone" value="cst"/>
+        <label for="cst-time-zone">Central Standard Time</label><br>
+        <input type="radio" name="timezone" id="mst-time-zone" value="mst"/>
+        <label for="mst-time-zone">Mountain Standard Time</label><br>
+        <input type="radio" name="timezone" id="pst-time-zone" value="pst"/>
+        <label for="pst-time-zone">Pacific Standard Time</label><br>
+        <input type="radio" name="timezone" id="ast-time-zone" value="ast"/>
+        <label for="ast-time-zone">Alaska Standard Time</label><br>
+        <input type="radio" name="timezone" id="hst-time-zone" value="hst"/>
+        <label for="hst-time-zone">Hawaiian Standard Time</label><br><br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+    <div id="time-zone-display"></div>
     
 </body>
 </html>
