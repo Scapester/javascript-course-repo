@@ -26,6 +26,20 @@
         <button type="submit" value="Submit">Submit</button>
     </form>
     <div id="time-zone-display"></div>
-    
+    <script>
+        function readform(){
+            let radioButtons = document.getElementsByName('timezone'),
+                userSelection = radioButtons[0].value,
+                i; 
+
+            for (i = 0; i < radioButtons.length; i++){
+               if(radioButtons[i].checked === true){
+                   // Dispay button timezone value...   
+                   userSelection = radioButtons[i].value; 
+                   document.getElementById('time-zone-display').innerHTML = userSelection;
+               } 
+            }
+        }
+    </script>
 </body>
 </html>
